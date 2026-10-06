@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYUI Consultation Intake Form</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b1020'/%3E%3Ccircle cx='32' cy='32' r='16' fill='%236ee7b7'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-shell">
+        <div class="form-card">
+            <header class="form-header">
+                <p class="eyebrow">Client Intake</p>
+                <h1>BYUI Consultation Intake</h1>
+            </header>
+            <form class="intake-form">
+                <fieldset class="form-section">
+                    <legend>For the professor or client seeking a consultation</legend>
+                    <div class="section-fields">
+                        <div class="field">
+                            <label for="name">Your name</label>
+                            <input id="name" type="text" autocomplete="name" placeholder="Enter your name">
+                        </div>
+                        <div class="field">
+                            <label for="employment-status">Which best describes your role?</label>
+                            <select id="employment-status">
+                                <option value="" disabled selected>Select your role</option>
+                                <option value="professor">Professor</option>
+                                <option value="adjunct-professor">Adjunct Professor</option>
+                                <option value="student">Student</option>
+                                <option value="faculty">Faculty</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="what">What would you like help with?</label>
+                            <select id="what">
+                                <option value="" disabled selected>Select a topic</option>
+                                <option value="course-design">Course design or redesign</option>
+                                <option value="instructional-technology">Instructional technology</option>
+                                <option value="teaching-strategies">Teaching strategies</option>
+                                <option value="student-engagement">Student engagement</option>
+                                <option value="assessment">Assessment or feedback</option>
+                                <option value="accessibility">Accessibility or inclusion</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="who">Who will this consultation support?</label>
+                            <select id="who">
+                                <option value="" disabled selected>Select who is involved</option>
+                                <option value="self">Just me</option>
+                                <option value="students">My students</option>
+                                <option value="team">My teaching team or department</option>
+                                <option value="multiple-groups">Multiple groups</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="why">What prompted you to seek support?</label>
+                            <select id="why">
+                                <option value="" disabled selected>Select a reason</option>
+                                <option value="new-course">I am planning a new course</option>
+                                <option value="improve-course">I want to improve an existing course</option>
+                                <option value="student-feedback">I am responding to student feedback</option>
+                                <option value="new-tool">I am adopting a new tool or technology</option>
+                                <option value="accessibility">I need to address accessibility</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="their-goals">What would you like to accomplish?</label>
+                            <input id="their-goals" type="text" placeholder="Describe the outcome you hope for">
+                        </div>
+                        <div class="field">
+                            <label for="timeline">When do you need support?</label>
+                            <select id="timeline">
+                                <option value="" disabled selected>Select a timeframe</option>
+                                <option value="asap">As soon as possible</option>
+                                <option value="2-4-weeks">Within 2–4 weeks</option>
+                                <option value="this-term">This term</option>
+                                <option value="next-term">Next term</option>
+                                <option value="flexible">My timeline is flexible</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="form-section">
+                    <legend>For the employee or expert</legend>
+                    <div class="section-fields">
+                        <div class="field">
+                            <label for="process">What stage is the work at?</label>
+                            <select id="process">
+                                <option value="" disabled selected>Select a stage</option>
+                                <option value="not-started">Not started</option>
+                                <option value="exploring">Exploring options</option>
+                                <option value="planning">Planning</option>
+                                <option value="in-progress">In progress</option>
+                                <option value="reviewing">Reviewing or refining</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="modality">How should the consultation take place?</label>
+                            <select id="modality">
+                                <option value="" disabled selected>Select a format</option>
+                                <option value="in-person">In person</option>
+                                <option value="video">Video call</option>
+                                <option value="phone">Phone</option>
+                                <option value="email">Email or asynchronous</option>
+                                <option value="hybrid">A mix of formats</option>
+                                <option value="undecided">No preference / not sure</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="digital-fluency">How comfortable is the client with relevant digital tools?</label>
+                            <select id="digital-fluency">
+                                <option value="" disabled selected>Select a comfort level</option>
+                                <option value="beginner">New to these tools</option>
+                                <option value="basic">Some experience</option>
+                                <option value="intermediate">Comfortable using them</option>
+                                <option value="advanced">Very experienced</option>
+                                <option value="not-sure">Not sure</option>
+                                <option value="not-applicable">Not applicable</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="support-need">What kind of support should be provided?</label>
+                            <select id="support-need">
+                                <option value="" disabled selected>Select a support type</option>
+                                <option value="advice">Advice or recommendations</option>
+                                <option value="guided">Guided, step-by-step help</option>
+                                <option value="hands-on">Hands-on assistance</option>
+                                <option value="resources">Resources or training materials</option>
+                                <option value="ongoing">Ongoing follow-up</option>
+                                <option value="not-sure">Not sure yet</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="independent-level">How independently can the client continue after the consultation?</label>
+                            <select id="independent-level">
+                                <option value="" disabled selected>Select a level</option>
+                                <option value="independently">The client can continue independently</option>
+                                <option value="some-guidance">The client may need occasional guidance</option>
+                                <option value="regular-guidance">The client will need regular guidance</option>
+                                <option value="ongoing-support">The client will need ongoing support</option>
+                                <option value="not-sure">Not sure yet</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="scope">How much of your work is in scope?</label>
+                            <select id="scope">
+                                <option value="" disabled selected>Select a scope</option>
+                                <option value="single-course">One course</option>
+                                <option value="multiple-courses">Multiple courses</option>
+                                <option value="program">A program or department</option>
+                                <option value="institution">Institution-wide</option>
+                                <option value="not-sure">Not sure yet</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="tas">TAS</label>
+                            <input id="tas" type="text" placeholder="Enter TAS details">
+                        </div>
+                        <div class="field">
+                            <label for="investment">What time or resources will the work require?</label>
+                            <input id="investment" type="text" placeholder="Estimate the time or resources needed">
+                        </div>
+                        <div class="field">
+                            <label for="previous-results">What has the client tried so far, and what happened?</label>
+                            <input id="previous-results" type="text" placeholder="Summarize previous attempts or outcomes">
+                        </div>
+                        <div class="field">
+                            <label for="change-velocity">How often does this work or process change?</label>
+                            <select id="change-velocity">
+                                <option value="" disabled selected>Select how often it changes</option>
+                                <option value="daily">Daily</option>
+                                <option value="weekly">Weekly</option>
+                                <option value="monthly">Monthly</option>
+                                <option value="semester">Semester</option>
+                                <option value="yearly">Yearly</option>
+                                <option value="indefinite">Indefinite</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="teaching-method-style">Which teaching approach is currently used?</label>
+                            <select id="teaching-method-style">
+                                <option value="" disabled selected>Select an approach</option>
+                                <option value="lecture">Lecture or presentation</option>
+                                <option value="discussion">Discussion or seminar</option>
+                                <option value="project">Project- or problem-based learning</option>
+                                <option value="online">Online or blended learning</option>
+                                <option value="experiential">Hands-on or experiential learning</option>
+                                <option value="varied">A mix of approaches</option>
+                                <option value="other">Other / not sure</option>
+                            </select>
+                        </div>
+                        <div class="field field-wide">
+                            <label for="narrative">Additional context</label>
+                            <textarea id="narrative" placeholder="Share anything else that would help the expert prepare"></textarea>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
